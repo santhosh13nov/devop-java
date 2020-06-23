@@ -72,7 +72,7 @@ node {
 
       }
   } finally {
-     step([$class: 'Wscleanup'])
+     step([$class: 'WsCleanup'])
   }
 
 }
