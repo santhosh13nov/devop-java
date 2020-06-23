@@ -10,7 +10,7 @@ node {
 
     stage('Prepare') {
       mvnHome = tool 'maven'
-      jdk = tool 'jdk11'
+      jdk = tool 'jdk8'
       env.JAVA_HOME = "${jdk}"
       
     }
@@ -72,7 +72,7 @@ node {
 
       }
   } finally {
-     step([$class: 'Wscleanup'])
+     step([$class: 'WsCleanup'])
   }
 
 }
